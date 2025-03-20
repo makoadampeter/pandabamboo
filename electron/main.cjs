@@ -1,4 +1,4 @@
-const { app, BrowserWindow } = require('electron');
+const { app, BrowserWindow, globalShortcut } = require('electron');
 const path = require('path');
 
 let mainWindow;
@@ -21,6 +21,10 @@ app.whenReady().then(() => {
   } else {
     mainWindow.loadURL(path.join(__dirname, '..', 'dist', 'index.html'));
   }
+  
+  globalShortcut.register('CommandOrControl+Shift+I', () => {
+    mainWindow.webContents.openDevTools();
+  });
 
   mainWindow.on('closed', () => {
     mainWindow = null;
