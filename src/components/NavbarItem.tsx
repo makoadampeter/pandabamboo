@@ -1,13 +1,15 @@
+import { Link } from 'react-router-dom';
 import './NavbarItem.css';
 
 interface NavbarItemProps {
     title: string;
+    linkTo: string;
 }
 
-export default function NavbarItem({ title }: NavbarItemProps) {
+export default function NavbarItem({ title, linkTo }: NavbarItemProps) {
     return (
-        <div className="NavbarItem">
+        <Link to={linkTo} className="NavbarItem">
             {title}
-        </div>
+        </Link>
     );
 }

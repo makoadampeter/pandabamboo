@@ -1,3 +1,6 @@
 .NavbarItem {
+    width: 100%;
     color: #ffffff;
+    display: block;
+    text-decoration: none;
 }

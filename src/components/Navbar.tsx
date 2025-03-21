@@ -6,13 +6,13 @@ export default function Navbar() {
     return (
         <>
             <div id="navbar">
-                <NavbarItem title="Home"></NavbarItem>
-                <NavbarItem title="Recipes"></NavbarItem>
-                <NavbarItem title="Ingredients"></NavbarItem>
-                <NavbarItem title="Pre-made food"></NavbarItem>
-                <NavbarItem title="Drinks"></NavbarItem>
-                <NavbarItem title="Shopping list"></NavbarItem>
-                <NavbarItem title="Settings"></NavbarItem>
+                <NavbarItem title="Home" linkTo="/"></NavbarItem>
+                <NavbarItem title="Recipes" linkTo="/recipes"></NavbarItem>
+                <NavbarItem title="Ingredients" linkTo="/ingredients"></NavbarItem>
+                <NavbarItem title="Pre-made food" linkTo="/premade"></NavbarItem>
+                <NavbarItem title="Drinks" linkTo="/drinks"></NavbarItem>
+                <NavbarItem title="Shopping list" linkTo="/shoppinglist"></NavbarItem>
+                <NavbarItem title="Settings" linkTo="/settings"></NavbarItem>
             </div>
         </>
     );
